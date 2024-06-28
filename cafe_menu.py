@@ -21,11 +21,11 @@ another_order = input("you want to order something else:(yes/no)")
 if another_order == "yes":
     item_2 = input("enter an anoter order: ")
     if item_2 in menu:
-        order_total += menu[item_2] #add value of order
-        print(f"your item {item_2} has been aded to your order")
-#     else:
-#         print("enetered order is invalid")
-# elif another_order == "no":
+        order_total += menu[item_2]
+        print(f"your item {item_2} has been added to your order")
+    else:
+        print("enetered order is invalid")
+elif another_order == "no":
     print(f"your total order is Rs: {order_total}")
-# else:
-#     print("invalid input")
+else:
+    print("invalid input")
